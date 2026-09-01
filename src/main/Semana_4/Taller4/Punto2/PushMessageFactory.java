@@ -1,4 +1,10 @@
 package main.Semana_4.Taller4.Punto2;
 
-public class PushMessageFactory {
+public class PushMessageFactory implements MessageFactory {
+
+    public Message build(String event) {
+        return new PushMessage(
+                "Pedido actualizado: " + event
+        );
+    }
 }

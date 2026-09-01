@@ -1,4 +1,5 @@
 package main.Semana_4.Taller4.Punto1;
 
-public class PaymentFactory {
+public interface PaymentFactory {
+    PaymentStrategy create(String type);
 }

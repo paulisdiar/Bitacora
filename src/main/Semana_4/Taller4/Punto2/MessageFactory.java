@@ -1,4 +1,5 @@
 package main.Semana_4.Taller4.Punto2;
 
-public class MessageFactory {
+public interface MessageFactory {
+    Message build(String event);
 }
